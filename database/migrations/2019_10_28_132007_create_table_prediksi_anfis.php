@@ -14,7 +14,7 @@ class CreateTablePrediksiAnfis extends Migration
     public function up()
     {
         Schema::create('prediksi_anfis', function (Blueprint $table) {
-            $table->bigIncrements('id_anfis');
+            $table->bigIncrements('id');
             $table->string('cuaca_anfis');
             $table->integer('suhu_anfis');
             $table->integer('kelembaban_anfis');

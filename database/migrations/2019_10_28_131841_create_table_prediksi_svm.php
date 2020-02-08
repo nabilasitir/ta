@@ -14,7 +14,7 @@ class CreateTablePrediksiSvm extends Migration
     public function up()
     {
          Schema::create('prediksi_svm', function (Blueprint $table) {
-            $table->bigIncrements('id_svm');
+            $table->bigIncrements('id');
             $table->string('cuaca_svm');
             $table->integer('suhu_svm');
             $table->integer('kelembaban_svm');
